@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jointed Objects</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+      Canvas Not Supported
+    </canvas>
+    <p>
+      <button type="button" onclick="speedUp()">SpeedUp</button>
+      <button type="button" onclick="runStop()">RunStop</button>
+      <button type="button" onclick="speedDown()">SpeedDown</button>
+    </p>
+    <br><b>User Instructions: </b><br>
+    1. Click "SpeedUp" to accelerate the movement of the objects, and click "SpeedDown" to slow down their movements;<br>
+    2. Click "RunStop" to stop/begin the dynamic change of the picture (including the movement of the objects and the variation of the colors);<br>
+    3. Press "up-arrow" to move up the flying bird, and press "down-arrow" to move it down;<br>
+    4. Press "right-arrow" to let the goose step forward, and press "left-arrow" to let it step backward;<br>
+    5. Click at lower left near to the four-point star to make a five-point star appear, reclick at the same position to make it disappear;<br>
+    6. Click at upper right near to it will result in the appearance of another five-point star;<br>
+    7. Drag the mouse to rotate the four-point star;<br>
+    8. Resize the browser window to change the opacity of the canvas.<br>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/cuon-matrix-mod.js"></script>
+    <script src="./lib/cuon-matrix-quat.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="projectA.js"></script>
+
+  </body>
+</html>
